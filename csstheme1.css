@@ -27,6 +27,7 @@ body {
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
 	color: #222;
+	overflow-x: hidden;
 }
 
 footer {
@@ -41,10 +42,22 @@ hr.light {
 	margin-top: .8rem;
 	margin-bottom: 1rem;
 }
+h3 {
+	text-align: center;
+}
 
 #collapseOne img {
 	max-height: 50%;
 	max-width: 70%;
+}
+
+#facial,
+#corporal {
+	color: #49596e;
+	text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc,
+		2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee,
+		6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+	font-weight: 600;
 }
 
 .navbar {
@@ -56,6 +69,10 @@ hr.light {
 }
 .nav-link {
 	font-size: 1.1em !important;
+}
+
+.navbar-toggler {
+	transition-duration: 1s;
 }
 .btn-link {
 	color: #eeecec;
@@ -160,7 +177,7 @@ hr.light {
 }
 
 .welcome {
-	width: 75%;
+	width: 85%;
 	margin: 0 auto;
 	padding-top: 2rem;
 }
@@ -317,6 +334,15 @@ hr.light {
 	}
 }
 @media (max-width: 576px) {
+	.btn-link {
+		font-size: 75%;
+	}
+	.caption-text {
+		font-size: 140%;
+	}
+	.carousel-caption {
+		font-size: 80%;
+	}
 	.carousel-caption {
 		top: 40%;
 	}
@@ -347,8 +373,19 @@ hr.light {
 		width: 35px;
 		height: 35px;
 	}
+
+	.welcome {
+		width: 95%;
+	}
+
+	.welcome hr {
+		width: 100%;
+	}
 	.display-4 {
 		font-size: 160%;
+	}
+	.display-5 {
+		font-size: 125%;
 	}
 }
 
